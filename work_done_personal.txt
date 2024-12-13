@@ -1,0 +1,5 @@
+Ci workflows, object-oriented software architecture
+Designed a pokemon battling web game in java and javascript
+Developed a web application for a local business in python, car detailing
+Done lots a of kernel and system level research
+Wrote a compiler for a simple language in C++

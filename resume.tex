@@ -1,0 +1,306 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, 
+    top=2 cm, 
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Jacob Lane Moore's CV},
+    pdfauthor={Jacob Lane Moore},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+% Ensure that generated pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.3 cm
+}{
+    0.2 cm
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\newcommand{\AND}{\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
+
+\begin{document}
+
+\begin{header}
+    \fontsize{25 pt}{25 pt}\selectfont JACOB LANE MOORE
+
+    \vspace{5 pt}
+
+    \normalsize
+    \mbox{Huntsville, AL 35806}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\href{mailto:jlmoors001@gmail.com}{jlmoors001@gmail.com}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\href{tel:+1-256-701-7888}{(256) 701-7888}}
+\end{header}
+
+\vspace{5 pt - 0.3 cm}
+
+\section{Education}
+
+\begin{twocolentry}{Expected 2027}
+    \textbf{MS, Georgia Institute of Technology}, Computer Science, Computing Systems
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item GPA: \textbf{4.0/4.0}
+        \item \textbf{Coursework:} Hypervisors, Distributed Systems, Software Architecture, Compilers
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Graduated}
+    \textbf{BS, Mississippi State University}, Computer Engineering
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item GPA: \textbf{4.0/4.0}
+        \item \textbf{Coursework:} Embedded Systems, Systems Programming, Computer Architecture, Operating Systems
+    \end{highlights}
+\end{onecolentry}
+
+
+\section{About Me}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Languages:} C++/C, Python
+        \item \textbf{Development:} Neovim, VSCode, Linux, Docker, CMake, Make, Zsh/Bash, Git
+        \item \textbf{ML/DL:} PyTorch, Tensorflow, RLlib, Scikit-Learn, Pandas, Grafana, Matplotlib
+        \item \textbf{Certs:} DeepLearning.AI, Neural Networks and Deep Learning (Andrew Ng), CompTIA Security+
+    \end{highlights}
+\end{onecolentry}
+
+
+\section{Experience}
+
+\begin{twocolentry}{05/2023 – Current}
+    \textbf{Software Design Engineer}, Torch Technologies -- Huntsville, AL
+\end{twocolentry}
+
+\vspace{0.20 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Support a core Reinforcement Learning project, developing libraries and functionalities critical to the training/integration pipeline.
+        \item Develop and maintain a C++ data model library for manipulating datasets used in deep learning architectures (Transformers, CNNs).
+        \item Build C++ applications for AI classification performance metrics and ONNX model inference integration.
+        \item Developed a Python AI classification pipeline simplifying data generation, preprocessing, training, and evaluation for ML/DL models.
+        \item Utilize Python multiprocessing to efficiently handle large datasets, optimizing memory usage and runtime.
+        \item Collaborate in an AGILE environment, managing code via GitLab and ensuring reliable AI systems.
+        \item Research state-of-the-art DL and RL architectures to improve workflow and performance.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{twocolentry}{05/2020 – 08/2022 (Summers/Winters)}
+    \textbf{Software Engineering Intern}, Torch Technologies -- Huntsville, AL
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Supported and added features to a primary C++ project with 12+ distinct services.
+        \item Briefly supported an Unreal Engine project, expanding socket communications for enhanced real-time interaction.
+        \item Created a Python GUI for viewing/zooming Digital Elevation Models and overlaying satellite imagery.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{twocolentry}{09/2020 – 05/2022}
+    \textbf{Undergraduate Research Assistant}, Mississippi State University CSE Department
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed data acquisition/analysis systems for predictive maintenance using a machine fault simulator and fiber optic sensors.
+        \item Researched transfer learning and tested advanced ML clustering algorithms (TICC).
+        \item Built and studied GANs for high-quality dataset expansion.
+    \end{highlights}
+\end{onecolentry}
+
+
+\section{Skills}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Skilled in C++/Python implementation of design patterns and custom data structures.
+        \item Strong experience with CMake-based build/install processes on Windows/Linux.
+        \item Familiar with IPCs and synchronization primitives (ROS2 development).
+        \item Extensive Python/Bash scripting for automation and environment setup.
+        \item Proficient in manipulating large datasets with Pandas/NumPy.
+        \item Strong understanding of deep learning (LSTM, RNN, Transformers, TFT).
+        \item Experience with ML algorithms (GBM, KNN, K-Means, Random Forest).
+        \item Experience architecting medium-scale OO applications/libraries in C++ and Python.
+        \item Proficient in Linux system administration and development.
+        \item Skilled in collaborative development, coding standards, and version control (Git).
+    \end{highlights}
+\end{onecolentry}
+
+\section{Projects}
+
+\vspace{0.2 cm}
+
+\begin{onecolentry}
+    \textbf{Autonomous RC Car (Minesweeper):}
+    \begin{highlights}
+        \item Solely engineered the entire software stack for a low-cost, disposable autonomous RC car designed to sweep for and detonate landmines.
+        \item Architected a robust ROS 2 pub/sub service-oriented navigation system fusing raw IMU/GPS data for precise Ackermann steering control via electronic speed controllers.
+        \item Implemented a Python-based command controller integrating base station input and RTK correctional data over a mavros radio, ensuring accurate real-time navigation.
+        \item Developed all supporting base station software and communication interfaces, seamlessly linking computational logic with field operations.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{onecolentry}
+    \textbf{Tiger Language Compiler:}
+    \begin{highlights}
+        \item Designed and implemented a C++ compiler for a functional, ALGOL-like language (Tiger), producing optimized MIPS assembly.
+        \item Introduced a TAC intermediate representation and implemented two register allocation strategies:
+            \begin{itemize}[leftmargin=15pt]
+                \item Chaitin's Naive Allocation: A simpler, less optimized approach relying on a heuristic-based allocation.
+                \item Briggs Optimization: A comprehensive scheme incorporating control-flow and liveness analysis, as well as instruction cost metrics to minimize load/stores and branches.
+            \end{itemize}
+        \item Achieved best-in-class performance on benchmark tasks, reducing instruction counts by a factor of 10 compared to peer solutions.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{onecolentry}
+    \textbf{Before and After Creator:}
+    \begin{highlights}
+        \item Built a locally hosted web application leveraging unsupervised ML and deep learning to match before/after car detailing images.
+        \item Automated bulk image processing, generating side-by-side collages for a detailing business, improving workflow efficiency and consistency.
+        \item Engineered a custom pairing algorithm to reliably identify corresponding images and streamline final outputs for user download.
+    \end{highlights}
+\end{onecolentry}
+
+\end{document}
+

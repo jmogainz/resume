@@ -1,0 +1,38 @@
+# LaTeX generated files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+*.acr
+*.alg
+*.acn
+*.bcf
+*.run.xml
+*.vrb
+
+# Backup files created by LaTeX editors
+*.bak
+*.sav
+
+# Temporary files
+*.tmp
+*~
+
+# SyncTeX file
+*.synctex.gz
+

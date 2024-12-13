@@ -1,0 +1,123 @@
+Okay here is the current latest version of the resume now. I have taken what you have given me and tweaked it quite a bit. but now I would like you make some more changes to it. I want to completely redo the current intern section, we need to make it sound much more like I actually did something, so I am going to be more specific, and the same goes for the software design engineer section. Okay I am going to give you the tasks that I worked on this past 2 years that I think are the coolest, and I want you to build out my bullet points for me. I will do the same for the intern one and then make my bullet points for me to sound like strong resume bullet points. Okay, here we go. I want you to just learn everything about me and what I have done from reading it and then in your own words write resume bullet points....cause my words arent very good but you can probably infer what I am talking about. My ultimate goal is to be system level embedded/os c/c++ developer, so everything in my resume should be to that angle. So I am just going to tell me about my job and then you pull from it what you think is good and important to put in a job experience section.
+
+Here is my self eval document that I completed this spring:
+
+Name: Jacob Moore						Date: 1/24/24 
+
+Discuss your job (critical functions, general objectives, your customers) 
+
+Employee Feedback:  
+
+ 
+
+In my role as a software developer within the AI/ML team, I focus on architecting, designing, and implementing C++ applications and libraries to aid a variety of AI-related tasks. A key part of my job involves our Reinforcement Learning (RL) project, where I'm tasked with developing features and libraries that are incorporated into our C++/Python pipeline. This necessitates a thorough understanding of the codebase as well as the technical objectives of the pipeline.  
+
+I am skilled in C++ memory management, multithreading, and time complexity, which are crucial for optimizing our RL learning pipeline in parallel environments. My expertise extends to detailed system design, where I utilize behavioral and creational patterns to construct scalable and robust systems. A major emphasis of my work is on the usability and maintainability of system, relying heavily on a deep understanding of modular and layered architecture principles. This approach requires the development of clear interfaces and effective separation of concerns, making updates and scaling more seamless. Additionally, I'm responsible for creating comprehensive documentation and diagrams for our developed libraries, ensuring clarity and long-term maintainability of the system. 
+
+Beyond my technical skills, having a deep knowledge of our systems allows me to suggest different approaches and improvements, many of which have been accepted and integrated into our design. Furthermore, I bring intermediate experience in machine learning and deep learning to the table. This allows me to offer ideas and solutions that enhance or address data science-related challenges in our projects. I also have intermediate knowledge of Linux operating systems, contributing to the setup and the debugging of our deployment environments. 
+
+My customer in this context is Daniel Tidwell, to whom our team delivers tailored solutions and support, aligning with our project objectives. 
+
+ 
+
+Discuss your significant accomplishments during the past quarter. 
+
+Employee Feedback:  
+
+ 
+
+Over the past quarter, my significant contributions and accomplishments include but are not limited to: 
+
+Key Projects and Initiatives: 
+
+Development of a C++ Onnx Model inferencing library which involved a composition data model architecture that imitates the functionality of the python Pytorch Forecasting library’s time series dataset class. 
+
+Development of the ServiceAllocator library with remote (docker containers) and local (localhost) allocation modes (responsible for procedurally starting up instance groups of toolbox services) 
+
+Implementation of RL Gym Spaces in C++ as a library, complete with tests, which uses an interface/implementation architecture 
+
+Development of an RL Observations library and associated tests which uses a hierarchical interface/implementation architecture 
+
+Enabling Python RLlib and Stable Baselines algorithms to be exported in Onnx format through extensive trials and debugging 
+
+Developed Pybind11 code that allows our C++ libraries to be used seamlessly in a python RL environment 
+
+Supported the building, debugging, and running of our project on Linux 
+
+Contributed to the growth of my teammates in C++ and software design principles through indirect code examples and direct advice and support 
+
+Deepening Software Architecture Knowledge: 
+
+I have significantly enhanced my understanding of high-level software architecture styles and low-level design patterns. This knowledge has been instrumental in writing modular object-oriented (OO) libraries that epitomize exemplary software development principles. 
+
+The libraries I have developed model critical software attributes like readability, maintainability, scalability, completeness, efficiency, and robustness. They also embody fundamental software development concepts such as encapsulation, abstraction, and cohesion. 
+
+Overall Contribution: 
+
+My contributions this quarter have not only advanced our team's technical capabilities but has directly impacted the efficiency and effectiveness of our RL learning pipeline and has been pivotal in driving the project towards its strategic objectives. 
+
+ 
+
+What role do you see yourself in, both as a part of your working team, and in the Torch organization as a whole? 
+
+Employee Feedback:  
+
+I see myself as a valuable and high-performing contributor to our projects, and I play a small mentoring role within my team, providing guidance and support to colleagues less versed in the intricacies of core software development techniques and principles, build systems, and AI/ML methodologies. This role helps elevate the team's overall skill set and ensures a smoother workflow in our complex project environment. I also embrace a learner's role within the team, eagerly accepting advice and ideas from those more experienced than me, understanding the importance of continual growth and learning from senior team members.  
+
+ 
+
+In the broader context of the organization, I am committed to continuously refining my skills and deepening my knowledge in my field. I believe my strong work ethic and consistent pursuit of improvement, coupled with a desire to use modern software technologies, serve as a positive encouragement to those around me. This approach sets a solid example for others to see of what it means to work at Torch, emphasizing the values of innovation and high-quality work. 
+
+Which of your job elements do you perform best? Which elements do you enjoy more? 
+
+Employee Feedback:  
+
+I am confident in my ability to write high-quality code with a quick turnaround. Given sufficient time, I believe I can develop a solution for almost any request, making problem-solving one of my strongest job elements. I am also a good learner and respect those more senior than me who impart knowledge and wisdom in order to make me a better developer daily. The aspects of my job that bring me the most enjoyment are designing and writing code, along with creating UML diagrams. Furthermore, I take pleasure in teaching others about areas in which I am knowledgeable and consider myself to be adept at it. 
+
+Which of your job elements do you think you need to improve on? Which elements do you like least? 
+
+Employee Feedback:  
+
+I recognize that there is room for improvement in my knowledge of the latest methodologies in machine learning, deep learning, and reinforcement learning. Additionally, my limited knowledge in the defense sector presents another area where I need to enhance my understanding, but I believe this just comes with time. By deepening my expertise in these domains, particularly with a focus on defense applications, I would be better equipped to contribute effectively to the development and refinement of RL model training techniques and tasks. Although I find the statistical elements of AI development intriguing, my inclination towards software design often dominates my task prioritization. I believe that by marginally increasing the emphasis on research, I could make more substantial contributions during brainstorming sessions and in the generation of project ideas, complementing the expertise I will accumulate through having more years of experience. 
+
+Discuss what you can do to improve your performance or enlarge your job. 
+
+Employee Feedback:  
+
+To enhance my performance, I plan to continue on my current trajectory, as I've observed a consistent increase in my efficiency and speed. This encompasses everything from debugging, object-oriented design, and build system setup, to script writing. Further refining my skills with Linux shell commands and reducing reliance on my mouse have already yielded significant efficiency boosts. Continuing in this direction will undoubtedly enlarge my job scope and capabilities. A key driving factor in the improvement that I have seen is my consistent research and exploration into ideas and concepts that are new to me.  
+
+What can your supervisor do to help you to improve your performance or enlarge your job? 
+
+Employee Feedback:  
+
+My supervisor already excels at providing the support and resources I need to work at my highest efficiency. Continuation of this supportive environment is all that's needed for me to continue growing and contributing at an optimal level. 
+
+What are your goals/objectives for the next 12 months? 
+
+Employee Feedback:  
+
+Over the next twelve months, my objectives are to reach a more advanced level in C++ development including architecture and design, become a more proficient RL researcher, and contribute more significantly to theoretical AI discussions. I aim to deepen my understanding of RL policies and algorithms and maintain a comprehensive knowledge of our entire codebase. I also aim to deepen my expertise in training large deep learning (DL) and reinforcement learning (RL) models, with a specific focus on parallelization in their physical deployment environments. This advanced knowledge will be instrumental in continuously enhancing our AI projects. By thoroughly understanding and effectively utilizing parallel computing techniques, I aspire to optimize the use of our available hardware resources, ensuring that we maximize efficiency and performance in our computational tasks. 
+
+What are your long-range career goals/objectives? 
+
+Employee Feedback:  
+
+Long-term, I aspire to become a leading figure in software development and machine learning engineering. I'm committed to continuously expanding my knowledge and refining my skills, a journey marked by my pursuit of a MS in Computer Science. My goal, as impossible as it is, is to be an expert in the entire spectrum of software engineering. I envision myself as a leader who not only excels technically but also inspires and elevates those around him. I am actively working towards a technical leadership role one day, aspiring to achieve it at increasingly higher levels within the organization. My leadership approach I desire to have is one of service, supporting and nurturing those underneath me for collective and individual success, which I believe is key to building a strong, effective team and, by extension, contributing significantly to the broader goals of Torch. 
+
+And in addition to the above things that I have done, I have also hunted down and contributed bug fixes to our internally developed division wide c++ toolbox which is a microservices architecture that offers services to incorporate distributedly into our our projects throughout the business unit. Our business unit has implemented both logical clocking as well as realtime clocking into the toolbox and our projects that use it, and my team ends being responsible for continually supporting the logical time component of the system as we are the ai team and need the services to run at maximum speed for our applications of it. I have also written plugins for AFSIM our core simulation software for use with AI, have helped maintain our logical time clocking plugin that allows us to keep the simulation in synchronization with our ai services. So distributed systems are definitely in my will house. Our distributed system toolbox features both async pub/sub communication over message queues, as well as direct synchronous communication via custom udp-based protocols with flatbuffer serialized messages.
+
+I wrote a plugin for AFSIM that places what I call shadow sensors into the simulation, and it basically manually constructs secrete sensors that are not known by the main simulation driving code that act as exact replicas as the sensors currently in the simulation. These sensors also shadow all changes and movements that the actual sensors make as well. What this allows us to do is modify some effects of the shadow sensors without having to modify the real sensors or plus extra real sensors in the scenario which would affect the accuracy of the simulation, so we can have unique sensor data reported along side the 'truth' sensor data, that is able to see through mountains or have infinite range. This has obvious benefits in reinforcement learning training when calculating rewards based on sensor placement. 
+
+In addition to these things, the observations library that I wrote, and I helped design the plugin style architecture for observations/rewards/actions
+
+I did all the logical time synchronization between our reinforcement learning python pipeline and our c++/pybinded services that connect to our 'environment' AFSIM simulation. 
+
+Service allocator, containerized network groups and local groups.
+
+I also help setup containerized/virtualized dev/deployment environments for our reinforcement learning pipeline. 
+
+Data Recorder singleton library that integrates into either logical time or real time distributed systems, and custom binary serialized data using flatbuffer objects for later easy deserialization and analysis, recording data on time intervals or events.
+
+I am also versed in UML object oriented design and have written a lot of UML diagrams for our projects, that our teams has been able to use in the implementation of our projects.
+
+I have also setup some of our largest cmake components for our projects, integrating many third party builds into our project as part of our build process, stream lining the build process for our team, and working to improve developer ergonomics in building and debugging our projects. I am extremely experienced in windows and linux dynamic/static library and executable compilation and making sure large projects work across multiple platforms with minimal code differences.
