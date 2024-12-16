@@ -1,0 +1,267 @@
+\documentclass[11pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, 
+    top=2 cm, 
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Jacob Lane Moore's CV},
+    pdfauthor={Jacob Lane Moore},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+% Ensure PDF is machine-readable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{times}
+
+% Settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.3 cm
+}{
+    0.2 cm
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
+}{
+    \end{adjustwidth}
+}
+
+% Environment to place content on left and date on the right:
+\newenvironment{twocolentry}[1]{
+    \onecolentry
+    \def\secondColumn{#1}
+    \setcolumnwidth{\fill,4.5cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newcommand{\sep}{\(\ \diamond\ \)}
+
+\begin{document}
+
+% Header Section
+\begin{center}
+
+    % Line above the name
+    {\color{primaryColor}\rule{\linewidth}{0.5pt}}\\[0.5em]
+
+    % Name
+    {\fontsize{25pt}{25pt}\selectfont \textbf{\scshape Jacob Lane Moore}}
+
+    % Thin line followed by thick line
+    {\color{primaryColor}\rule{\linewidth}{0.5pt}}\\[-0.8em]
+    {\color{primaryColor}\rule{\linewidth}{2.5pt}}
+
+    % Contact Information
+    \vspace{0.5em}
+    Huntsville, AL 35806 \sep \href{mailto:jlmoors001@gmail.com}{jlmoors001@gmail.com} \sep (256) 701-7888
+
+\end{center}
+
+
+\section{\scshape Education}
+
+\begin{twocolentry}{Expected 2027}
+    \textbf{MS, Georgia Institute of Technology}, Computer Science
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item GPA: \textbf{4.0/4.0}
+    \item \textbf{Coursework:} Hypervisors, Distributed Systems, Software Architecture, Compilers
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Graduated}
+    \textbf{BS, Mississippi State University}, Computer Engineering
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item GPA: \textbf{4.0/4.0}
+    \item \textbf{Coursework:} Embedded Systems, Systems Programming, Computer Architecture, Operating Systems
+\end{highlights}
+\end{onecolentry}
+
+
+\section{\scshape About Me}
+
+\begin{onecolentry}
+\begin{tabular}{@{}r l@{}}
+\textbf{Languages} & C++/C, Python \\
+\textbf{Development} & Neovim, VSCode, Linux, Docker, CMake, Make, Zsh/Bash, Git \\
+\textbf{ML/DL} & PyTorch, TensorFlow, RLlib, Scikit-Learn, Pandas, Grafana, Matplotlib \\
+\textbf{Certs} & DeepLearning.AI, Neural Networks and Deep Learning (Andrew Ng), CompTIA Security+ \\
+\end{tabular}
+\end{onecolentry}
+
+
+\section{\scshape Experience}
+
+\begin{twocolentry}{05/2023 – Current}
+    \textbf{Software Design Engineer}, Torch Technologies -- Huntsville, AL
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Engineered advanced C++ microservices and libraries for a reinforcement learning (RL) ecosystem, integrating AI models into AFSIM-based defense simulations under logical or real-time clocking.
+        \item Contributed to designing and implementing a plugin-style architecture (C++ and dynamic DLL loading) for RL observations, rewards, and actions, enabling on-demand extensibility and configuration-driven workflows.
+        \item Developed ONNX model abstraction layers and data model libraries to streamline batch inference and complex data transformations, leveraging design patterns (factory, strategy, singleton) for maintainable, scalable code.
+        \item Built distributed systems using UDP + Flatbuffers and asynchronous queues for inter-process communication, ensuring robust synchronization of RL training steps with simulation states.
+        \item Improved developer workflows by integrating third-party dependencies, refining CMake-based builds, and containerizing development environments for efficient CI/CD and cross-platform compatibility.
+        \item Expanded simulation capabilities with C++ plugins for AFSIM, introducing custom instrumentation of scenario data and specialized sensor modeling to better inform RL policies without altering core simulation fidelity.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4cm}
+
+\begin{twocolentry}{05/2020 – 08/2022 (Summers/Winters)}
+    \textbf{Software Engineering Intern}, Torch Technologies -- Huntsville, AL
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Created C++ and Python integrations with an internal microservices "Toolbox" and AFSIM simulation pipelines, generating large-scale training datasets under distributed, logically clocked conditions.
+        \item Developed a Python-based ML pipeline to preprocess simulation-derived data, applying various algorithms (GBM, KNN, DNN) and visualizing performance metrics in Grafana to inform model selection.
+        \item Designed a Python GUI (Terrain Tool) for manipulating high-resolution elevation and imagery data, automating the segmentation and export of terrain tiles into Unreal Engine environments.
+        \item Enhanced Unreal Engine C++ front-end visualization by incorporating new DIS packet handling for dynamic scenario elements, as well as implementing a deterministic network replay tool for reproducible debugging and performance analysis.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{twocolentry}{09/2020 – 05/2022}
+    \textbf{Undergraduate Research Assistant}, Mississippi State University CSE Department
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed data acquisition/analysis systems for predictive maintenance using a machine fault simulator and fiber optic sensors.
+        \item Researched transfer learning and tested advanced ML clustering algorithms (TICC).
+        \item Built and studied GANs for high-quality dataset expansion.
+    \end{highlights}
+\end{onecolentry}
+
+\section{\scshape Skills}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Expert in C++ OO design (factory, strategy, abstraction), data structures, memory management, and multithreading.
+        \item Proficient in distributed systems, IPC mechanisms (ROS2 pub/sub, UDP + Flatbuffers), and synchronization techniques.
+        \item Skilled in building and maintaining complex codebases with CMake, Python bindings, and containerized CI/CD workflows.
+        \item Experienced in integrating ML/DL frameworks (RLlib, SB3) with simulation environments, optimizing training pipelines and inference performance.
+        \item Adept at embedded/systems-level concepts, logical time simulation, and cross-platform development on Linux/Windows.
+    \end{highlights}
+\end{onecolentry}
+
+\section{\scshape Projects}
+
+\vspace{0.2 cm}
+
+\begin{onecolentry}
+    \textbf{Autonomous RC Car (Minesweeper):}
+    \begin{highlights}
+        \item Solely engineered the entire software stack for a low-cost, disposable autonomous RC car designed to sweep for and detonate landmines.
+        \item Architected a robust ROS 2 pub/sub service-oriented navigation system fusing raw IMU/GPS data for precise Ackermann steering control via electronic speed controllers.
+        \item Implemented a Python-based command controller integrating base station input and RTK correctional data over a mavros radio, ensuring accurate real-time navigation.
+        \item Developed all supporting base station software and communication interfaces, seamlessly linking computational logic with field operations.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{onecolentry}
+    \textbf{Tiger Language Compiler:}
+    \begin{highlights}
+        \item Designed and implemented a C++ compiler for a functional, ALGOL-like language (Tiger), producing optimized MIPS assembly.
+        \item Introduced a TAC intermediate representation and implemented two register allocation strategies:
+            \begin{itemize}[leftmargin=15pt]
+                \item Chaitin's Naive Allocation: A simpler, less optimized approach relying on heuristic allocation.
+                \item Briggs Optimization: A comprehensive scheme incorporating control-flow and liveness analysis, as well as instruction cost metrics to minimize load/stores and branches.
+            \end{itemize}
+        \item Achieved best-in-class performance on benchmark tasks, reducing instruction counts by a factor of 10 compared to peer solutions.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.4 cm}
+
+\begin{onecolentry}
+    \textbf{Before and After Creator:}
+    \begin{highlights}
+        \item Built a locally hosted web application leveraging unsupervised ML and deep learning to match before/after car detailing images.
+        \item Automated bulk image processing, generating side-by-side collages for a detailing business, improving workflow efficiency and consistency.
+        \item Engineered a custom pairing algorithm to reliably identify corresponding images and streamline final outputs for user download.
+    \end{highlights}
+\end{onecolentry}
+
+\end{document}
+
