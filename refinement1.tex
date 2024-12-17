@@ -155,9 +155,9 @@
 \begin{onecolentry}
 \begin{tabular}{@{}r l@{}}
 \textbf{Languages} & C++/C, Python \\
-\textbf{Development} & Neovim, VSCode, Linux, Docker, CMake, Make, Zsh/Bash, Git \\
+\textbf{Development} & Linux, Neovim, VSCode, Docker, CMake, Make, Zsh/Bash, Git \\
 \textbf{ML/DL} & PyTorch, TensorFlow, RLlib, Scikit-Learn, Pandas, Grafana, Matplotlib \\
-\textbf{Certs} & DeepLearning.AI, Neural Networks and Deep Learning (Andrew Ng), CompTIA Security+ \\
+\textbf{Certs} & Neural Networks and Deep Learning (DeepLearning.AI, Andrew Ng), CompTIA Security+ \\
 \end{tabular}
 \end{onecolentry}
 
@@ -171,12 +171,16 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Engineered advanced C++ microservices and libraries for a reinforcement learning (RL) ecosystem, integrating AI models into AFSIM-based defense simulations under logical or real-time clocking.
-        \item Contributed to designing and implementing a plugin-style architecture (C++ and dynamic DLL loading) for RL observations, rewards, and actions, enabling on-demand extensibility and configuration-driven workflows.
-        \item Developed ONNX model abstraction layers and data model libraries to streamline batch inference and complex data transformations, leveraging design patterns (factory, strategy, singleton) for maintainable, scalable code.
-        \item Built distributed systems using UDP + Flatbuffers and asynchronous queues for inter-process communication, ensuring robust synchronization of RL training steps with simulation states.
-        \item Improved developer workflows by integrating third-party dependencies, refining CMake-based builds, and containerizing development environments for efficient CI/CD and cross-platform compatibility.
-        \item Expanded simulation capabilities with C++ plugins for AFSIM, introducing custom instrumentation of scenario data and specialized sensor modeling to better inform RL policies without altering core simulation fidelity.
+        \item Developed modular C++ libraries within a logically clocked, microservices-driven training pipeline, ensuring deterministic synchronization of observations, actions, and rewards between a reinforcement learning algorithm and a high-fidelity simulation environment.
+        \item Designed and extended a plugin-based architecture for reinforcement learning components (observations, rewards, actions), utilizing dynamic linking and polymorphism to enable experimentation without recompilation.
+        \item Implemented a domain-specific query language using lexer/parser generation tools, enabling users to define complex observation structures and compositions through simple configuration files, thereby reducing boilerplate and enhancing flexibility.
+        \item Integrated efficient serialization protocols (e.g., FlatBuffers) and custom UDP-based messaging to enhance inter-service communication, while supporting asynchronous, event-driven pub/sub mechanisms for responsive and scalable distributed systems.
+        \item Developed a versatile C++ data model abstraction that dynamically loads, transforms, and batches datasets for a variety of deep learning models, with specialized support for the state-of-the-art forcasting model Temporal Fusion Transformer (TFT), and built a custom ONNX runtime abstraction to enable efficient model inference.
+        \item Engineered a service allocation framework to enable parallel experience gathering for reinforcement learning (RL) training by dynamically isolating sets of microservices for use by vectorized environments, supporting containerized deployments to maximize hardware utilization and system throughput for large-scale RL experiments.
+        \item Developed and maintained a versatile data recording utility library abstracted for seamless integration into any microservice, supporting both real-time distributed systems with asynchronous, time-driven recording and logical-time systems with synchronous, blocking operations to capture structured data for debugging, performance profiling, and offline analysis.
+        \item Improved DevOps workflows by supporting environment setup and build automation, primarily maintaining the Linux environment (spanning multiple distributions over time), and aided containerized development and deployment efforts, accelerating development cycles and streamlining team operations.
+        \item Leveraged CMake expertise to maintain, extend, and stabilize build systems across codebases, integrating numerous third-party libraries and ensuring reliable, efficient builds across diverse environments.
+        \item Mentored teammates in software design and C++ best practices, contributing to the team’s growth in developing high-quality code, debugging, and efficient development workflows.
     \end{highlights}
 \end{onecolentry}
 
@@ -189,10 +193,11 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Created C++ and Python integrations with an internal microservices "Toolbox" and AFSIM simulation pipelines, generating large-scale training datasets under distributed, logically clocked conditions.
-        \item Developed a Python-based ML pipeline to preprocess simulation-derived data, applying various algorithms (GBM, KNN, DNN) and visualizing performance metrics in Grafana to inform model selection.
-        \item Designed a Python GUI (Terrain Tool) for manipulating high-resolution elevation and imagery data, automating the segmentation and export of terrain tiles into Unreal Engine environments.
-        \item Enhanced Unreal Engine C++ front-end visualization by incorporating new DIS packet handling for dynamic scenario elements, as well as implementing a deterministic network replay tool for reproducible debugging and performance analysis.
+        \item Integrated internal C++ microservices with simulation pipelines and logical-time scheduling, enabling massive-scale data generation and reinforcement learning dataset collection, while ensuring strict temporal synchronization among distributed components.
+        \item Developed Python/C++ data processing pipelines to run, record, and analyze thousands of simulation scenarios, applying machine learning techniques (Gradient Boosting, KNN, DNN) to identify the best predictive models, and visualizing results with Grafana for performance tuning.
+        \item Created a Python-based GUI tool for interactive manipulation of high-resolution elevation and imagery data, automating the segmentation and export of complex terrain tiles into Unreal Engine—accelerating environment setup for simulation and training tasks.
+        \item Extended Unreal Engine’s C++ front-end with new DIS packet handling and deterministic network replay capabilities, enabling real-time visualization of projectiles, detonations, and scenario events in distributed simulations, and ensuring reproducible debugging sessions.
+        \item Authored custom plugins and tooling to enhance the simulation-to-ML workflow, enabling rapid iteration and integration of new sensor models, scenario parameters, and training conditions without impacting core simulation integrity.
     \end{highlights}
 \end{onecolentry}
 
@@ -205,9 +210,9 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Developed data acquisition/analysis systems for predictive maintenance using a machine fault simulator and fiber optic sensors.
-        \item Researched transfer learning and tested advanced ML clustering algorithms (TICC).
-        \item Built and studied GANs for high-quality dataset expansion.
+        \item Strengthened machine learning foundations by researching and applying advanced techniques (e.g., recurrent neural networks, GANs, transfer learning) to predictive maintenance tasks, building a solid theoretical and practical base for subsequent AI projects.
+        \item Engineered comprehensive data acquisition pipelines that interfaced directly with specialized sensing hardware, converting raw fiber optic signals into actionable training datasets for neural network modeling.
+        \item Explored innovative anomaly detection and time-series clustering algorithms, refining model selection and leveraging deep learning architectures (e.g., LSTMs) to enhance fault prediction accuracy and robustness.
     \end{highlights}
 \end{onecolentry}
 
