@@ -171,16 +171,16 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Developed modular C++ libraries within a logically clocked, microservices-driven training pipeline, ensuring deterministic synchronization of observations, actions, and rewards between a reinforcement learning algorithm and a high-fidelity simulation environment.
-        \item Designed and extended a plugin-based architecture for reinforcement learning components (observations, rewards, actions), utilizing dynamic linking and polymorphism to enable experimentation without recompilation.
-        \item Implemented a domain-specific query language using lexer/parser generation tools, enabling users to define complex observation structures and compositions through simple configuration files, thereby reducing boilerplate and enhancing flexibility.
+        \item Developed modular and configurable C++ libraries, utilizing modern OO design patterns, within a logically clocked, microservices-driven AI training pipeline, ensuring deterministic synchronization of actions, observations, and rewards between a reinforcement learning algorithm and a high-fidelity simulation environment.
+        \item Designed and extended a plugin-based architecture for reinforcement learning components (actions, observations, rewards), utilizing dynamic linking and polymorphism to enable quick experiment iteration without recompilation.
+        \item Implemented a domain-specific query language using lexer/parser generation tools and grammar, enabling users to define complex observation structures and compositions through simple configuration files, thereby reducing boilerplate and enhancing flexibility.
         \item Integrated efficient serialization protocols (e.g., FlatBuffers) and custom UDP-based messaging to enhance inter-service communication, while supporting asynchronous, event-driven pub/sub mechanisms for responsive and scalable distributed systems.
         \item Developed a versatile C++ data model abstraction that dynamically loads, transforms, and batches datasets for a variety of deep learning models, with specialized support for the state-of-the-art forcasting model Temporal Fusion Transformer (TFT), and built a custom ONNX runtime abstraction to enable efficient model inference.
-        \item Engineered a service allocation framework to enable parallel experience gathering for reinforcement learning (RL) training by dynamically isolating sets of microservices for use by vectorized environments, supporting containerized deployments to maximize hardware utilization and system throughput for large-scale RL experiments.
-        \item Developed and maintained a versatile data recording utility library abstracted for seamless integration into any microservice, supporting both real-time distributed systems with asynchronous, time-driven recording and logical-time systems with synchronous, blocking operations to capture structured data for debugging, performance profiling, and offline analysis.
-        \item Improved DevOps workflows by supporting environment setup and build automation, primarily maintaining the Linux environment (spanning multiple distributions over time), and aided containerized development and deployment efforts, accelerating development cycles and streamlining team operations.
-        \item Leveraged CMake expertise to maintain, extend, and stabilize build systems across codebases, integrating numerous third-party libraries and ensuring reliable, efficient builds across diverse environments.
-        \item Mentored teammates in software design and C++ best practices, contributing to the team’s growth in developing high-quality code, debugging, and efficient development workflows.
+        \item Engineered a service allocation framework to enable parallel experience gathering for reinforcement learning (RL) training by dynamically isolating groups of services for use by vectorized environments, utilizing docker networks and containerization to maximize hardware utilization and system throughput for large-scale RL experiments.
+        \item Developed and maintained a versatile data recording utility library abstracted for seamless integration into any microservice, supporting both real-time distributed systems with asynchronous, time-driven recording and logical-time systems with synchronous, event-driven recording to capture serialized data for debugging, performance profiling, and offline analysis.
+        \item Improved build and deployment pipelines by maintaining complex CMake-based build systems, integrating numerous third-party libraries, and supporting containerized and Linux-based environments, accelerating development cycles and ensuring reliable, efficient builds across diverse platforms.
+        \item Contributed bug fixes and enhancements to a division-wide C++ microservices toolbox, strengthening the reliability, maintainability, and performance of shared distributed infrastructure leveraged across multiple projects.
+        \item Implemented custom C++ plugins within AFSIM to create “shadow sensors,” enabling the simulation of alternative sensor capabilities during legitimate simulation runs without impacting baseline simulation state and fidelity, thus expanding analytical depth for AI-driven training and experimentation.
     \end{highlights}
 \end{onecolentry}
 
@@ -193,11 +193,9 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Integrated internal C++ microservices with simulation pipelines and logical-time scheduling, enabling massive-scale data generation and reinforcement learning dataset collection, while ensuring strict temporal synchronization among distributed components.
-        \item Developed Python/C++ data processing pipelines to run, record, and analyze thousands of simulation scenarios, applying machine learning techniques (Gradient Boosting, KNN, DNN) to identify the best predictive models, and visualizing results with Grafana for performance tuning.
-        \item Created a Python-based GUI tool for interactive manipulation of high-resolution elevation and imagery data, automating the segmentation and export of complex terrain tiles into Unreal Engine—accelerating environment setup for simulation and training tasks.
-        \item Extended Unreal Engine’s C++ front-end with new DIS packet handling and deterministic network replay capabilities, enabling real-time visualization of projectiles, detonations, and scenario events in distributed simulations, and ensuring reproducible debugging sessions.
-        \item Authored custom plugins and tooling to enhance the simulation-to-ML workflow, enabling rapid iteration and integration of new sensor models, scenario parameters, and training conditions without impacting core simulation integrity.
+        \item Developed Python/C++ data generation/processing pipelines to run, record, and analyze thousands of simulation scenarios, applying machine learning techniques (Gradient Boosting, KNN, DNN) to train predictive classification models for real-time threat assessment and decision-making.
+        \item Created a Python-based GUI tool for interactive manipulation of high-resolution elevation and imagery data, automating the segmentation and export of complex terrain tiles into Unreal Engine visualization projects.
+        \item Extended Unreal Engine visualization C++ front-end with additional DIS packet handling, enabling real-time visualization of projectiles, detonations, and scenario events in distributed simulations.
     \end{highlights}
 \end{onecolentry}
 
@@ -219,13 +217,41 @@
 \section{\scshape Skills}
 
 \begin{onecolentry}
-    \begin{highlights}
-        \item Expert in C++ OO design (factory, strategy, abstraction), data structures, memory management, and multithreading.
-        \item Proficient in distributed systems, IPC mechanisms (ROS2 pub/sub, UDP + Flatbuffers), and synchronization techniques.
-        \item Skilled in building and maintaining complex codebases with CMake, Python bindings, and containerized CI/CD workflows.
-        \item Experienced in integrating ML/DL frameworks (RLlib, SB3) with simulation environments, optimizing training pipelines and inference performance.
-        \item Adept at embedded/systems-level concepts, logical time simulation, and cross-platform development on Linux/Windows.
-    \end{highlights}
+    \begin {itemize}[leftmargin=0.4 cm]
+        \item \textbf{Core Software Architecture \& Design}
+        \begin{itemize}
+            \item Advanced proficiency in C++17/20 with strong OO design principles (Factory, Strategy, Singleton) and extensive UML modeling
+            \item Expertise in modular, layered, microservices, and service-oriented architectures
+            \item Experience applying MVC and related design patterns for clean and maintainable presentation layers
+        \end{itemize}
+
+        \item \textbf{Operating Systems \& Systems Programming}
+        \begin{itemize}
+            \item In-depth understanding of kernel architectures, CPU schedulers, memory managers, and the MMU’s role in virtual memory management
+            \item Strong knowledge of POSIX APIs, IPC mechanisms, and deterministic vs. non-deterministic operating system behaviors
+            \item Skilled in concurrency (multithreading, synchronization primitives), low-level memory management, and event-driven design
+        \end{itemize}
+
+        \item \textbf{Distributed \& Parallel Computing}
+        \begin{itemize}
+            \item Familiarity with messaging and serialization protocols (gRPC, RabbitMQ, Protocol Buffers, FlatBuffers)
+            \item Experience with containerization (Docker) and virtualization (QEMU/KVM)
+            \item Understanding of parallelization frameworks (MPI, OpenMP) and performance optimization techniques
+        \end{itemize}
+
+        \item \textbf{Machine Learning Integration}
+        \begin{itemize}
+            \item Practical experience integrating ML/DL frameworks (ONNX, PyTorch, TensorFlow) into simulation pipelines
+            \item Working knowledge of deep learning architectures (GANs, Transformers, LSTMs) and core ML concepts (backpropagation, activation functions)
+        \end{itemize}
+
+        \item \textbf{Collaboration \& Methodology}
+        \begin{itemize}
+            \item Proficient in Git-based workflows, code review processes, and industry-standard coding guidelines (Google Style, C++ Core Guidelines)
+            \item Experience with Agile methodologies (Scrum, Kanban), unit testing (gtest, Catch2), and profiling tools (gdb, Valgrind)
+            \item Committed to continuous improvement through static analysis (clang-tidy) and iterative development practices
+        \end{itemize}
+    \end{itemize}
 \end{onecolentry}
 
 \section{\scshape Projects}
@@ -238,7 +264,7 @@
         \item Solely engineered the entire software stack for a low-cost, disposable autonomous RC car designed to sweep for and detonate landmines.
         \item Architected a robust ROS 2 pub/sub service-oriented navigation system fusing raw IMU/GPS data for precise Ackermann steering control via electronic speed controllers.
         \item Implemented a Python-based command controller integrating base station input and RTK correctional data over a mavros radio, ensuring accurate real-time navigation.
-        \item Developed all supporting base station software and communication interfaces, seamlessly linking computational logic with field operations.
+        \item Developed all supporting base station software and communication interfaces, seamlessly linking user input to the vehicle's control system.
     \end{highlights}
 \end{onecolentry}
 
@@ -249,7 +275,7 @@
     \begin{highlights}
         \item Designed and implemented a C++ compiler for a functional, ALGOL-like language (Tiger), producing optimized MIPS assembly.
         \item Introduced a TAC intermediate representation and implemented two register allocation strategies:
-            \begin{itemize}[leftmargin=15pt]
+            \begin{itemize}
                 \item Chaitin's Naive Allocation: A simpler, less optimized approach relying on heuristic allocation.
                 \item Briggs Optimization: A comprehensive scheme incorporating control-flow and liveness analysis, as well as instruction cost metrics to minimize load/stores and branches.
             \end{itemize}
