@@ -1,4 +1,4 @@
-\documentclass[11pt, letterpaper]{article}
+\documentclass[10pt, letterpaper]{article}
 
 % Packages:
 \usepackage[
@@ -104,19 +104,15 @@
 % Header Section
 \begin{center}
 
-    % Line above the name
     {\color{primaryColor}\rule{\linewidth}{0.5pt}}\\[0.5em]
 
-    % Name
-    {\fontsize{25pt}{25pt}\selectfont \textbf{\scshape Jacob Lane Moore}}
+    {\fontsize{25pt}{25pt}\selectfont \textbf{\scshape JACOB LANE MOORE}}
 
-    % Thin line followed by thick line
     {\color{primaryColor}\rule{\linewidth}{0.5pt}}\\[-0.8em]
     {\color{primaryColor}\rule{\linewidth}{2.5pt}}
 
-    % Contact Information
     \vspace{0.5em}
-    Huntsville, AL 35806 \sep \href{mailto:jlmoors001@gmail.com}{jlmoors001@gmail.com} \sep (256) 701-7888
+    Huntsville, AL 35806 \sep \href{mailto:jlmoors001@gmail.com}{jlmoors001@gmail.com} \sep (256) 701-3403
 
 \end{center}
 
@@ -124,40 +120,39 @@
 \section{\scshape Education}
 
 \begin{twocolentry}{Expected 2027}
-    \textbf{MS, Georgia Institute of Technology}, Computer Science
+    \textbf{MS, Georgia Institute of Technology, Computer Science, Computing Systems}
 \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
 \begin{highlights}
-    \item GPA: \textbf{4.0/4.0}
-    \item \textbf{Coursework:} Hypervisors, Distributed Systems, Software Architecture, Compilers
+    \item GPA: 4.0/4.0
+    \item Coursework: Hypervisors, Distributed Systems, Software Architecture, Compilers
 \end{highlights}
 \end{onecolentry}
 
 \vspace{0.3 cm}
 
 \begin{twocolentry}{Graduated}
-    \textbf{BS, Mississippi State University}, Computer Engineering
+    \textbf{BS, Mississippi State University, Computer Engineering}
 \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
 \begin{highlights}
-    \item GPA: \textbf{4.0/4.0}
-    \item \textbf{Coursework:} Embedded Systems, Systems Programming, Computer Architecture, Operating Systems
+    \item GPA: 4.0/4.0
+    \item Coursework: Embedded Systems, Systems Programming, Computer Architecture, Operating Systems
 \end{highlights}
 \end{onecolentry}
-
 
 \section{\scshape About Me}
 
 \begin{onecolentry}
 \begin{tabular}{@{}r l@{}}
-\textbf{Languages} & C++/C, Python \\
-\textbf{Development} & Linux, Neovim, VSCode, Docker, CMake, Make, Zsh/Bash, Git \\
-\textbf{ML/DL} & PyTorch, TensorFlow, RLlib, Scikit-Learn, Pandas, Grafana, Matplotlib \\
-\textbf{Certs} & Neural Networks and Deep Learning (DeepLearning.AI, Andrew Ng), CompTIA Security+ \\
+Languages & C++/C, Python \\
+Development & Linux, Neovim, VSCode, Docker, CMake, Make, Zsh/Bash, Git \\
+ML/DL & PyTorch, TensorFlow, RLlib, Scikit-Learn, Pandas, Grafana, Matplotlib \\
+Certs & Neural Networks and Deep Learning (DeepLearning.AI, Andrew Ng), CompTIA Security+ \\
 \end{tabular}
 \end{onecolentry}
 
@@ -165,29 +160,29 @@
 \section{\scshape Experience}
 
 \begin{twocolentry}{05/2023 – Current}
-    \textbf{Software Design Engineer}, Torch Technologies -- Huntsville, AL
+    \textbf{Software Design Engineer, Torch Technologies – Huntsville, AL}
 \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Developed modular and configurable C++ libraries, utilizing modern OO design patterns, within a logically clocked, microservices-driven AI training pipeline, ensuring deterministic synchronization of actions, observations, and rewards between a reinforcement learning algorithm and a high-fidelity simulation environment.
-        \item Designed and extended a plugin-based architecture for reinforcement learning components (actions, observations, rewards), utilizing dynamic linking and polymorphism to enable quick experiment iteration without recompilation.
-        \item Implemented a domain-specific query language using lexer/parser generation tools and grammar, enabling users to define complex observation structures and compositions through simple configuration files, thereby reducing boilerplate and enhancing flexibility.
+        \item Developed modular and configurable C++ libraries, utilizing modern abstraction techniques, within a logically clocked, microservices-driven AI training pipeline, ensuring deterministic synchronization of actions, observations, and rewards between a reinforcement learning algorithm and a high-fidelity simulation environment.
+        \item Designed and extended a plugin-based architecture for reinforcement learning components—actions, observations, and rewards—leveraging dynamic linking and polymorphism to facilitate rapid iterative experimentation.
+        \item Implemented a domain-specific query language using lexer/parser generation tools, enabling users to define complex observation compositions through simple configuration files, thereby reducing boilerplate and enhancing flexibility.
         \item Integrated efficient serialization protocols (e.g., FlatBuffers) and custom UDP-based messaging to enhance inter-service communication, while supporting asynchronous, event-driven pub/sub mechanisms for responsive and scalable distributed systems.
-        \item Developed a versatile C++ data model abstraction that dynamically loads, transforms, and batches datasets for a variety of deep learning models, with specialized support for the state-of-the-art forcasting model Temporal Fusion Transformer (TFT), and built a custom ONNX runtime abstraction to enable efficient model inference.
+        \item Developed a versatile C++ data model that dynamically loads, transforms, and batches datasets for a variety of deep learning models, with specialized support for state-of-the-art transformers, and built a custom ONNX runtime abstraction to enable efficient model inference.
         \item Engineered a service allocation framework to enable parallel experience gathering for reinforcement learning (RL) training by dynamically isolating groups of services for use by vectorized environments, utilizing docker networks and containerization to maximize hardware utilization and system throughput for large-scale RL experiments.
-        \item Developed and maintained a versatile data recording utility library abstracted for seamless integration into any microservice, supporting both real-time distributed systems with asynchronous, time-driven recording and logical-time systems with synchronous, event-driven recording to capture serialized data for debugging, performance profiling, and offline analysis.
+        \item Developed and maintained a versatile multi-threaded data recording utility library abstracted for seamless integration into any microservice, supporting asynchronous, time-driven and synchronous, event-driven recording modes in logically-clocked distributed systems to capture serialized data for debugging, performance profiling, and offline analysis.
         \item Improved build and deployment pipelines by maintaining complex CMake-based build systems, integrating numerous third-party libraries, and supporting containerized and Linux-based environments, accelerating development cycles and ensuring reliable, efficient builds across diverse platforms.
         \item Contributed bug fixes and enhancements to a division-wide C++ microservices toolbox, strengthening the reliability, maintainability, and performance of shared distributed infrastructure leveraged across multiple projects.
-        \item Implemented custom C++ plugins within AFSIM to create “shadow sensors,” enabling the simulation of alternative sensor capabilities during legitimate simulation runs without impacting baseline simulation state and fidelity, thus expanding analytical depth for AI-driven training and experimentation.
+        \item Implemented custom C++ plugins within AFSIM to enable augmented behaviors such as the simulation of alternative/unconstrained sensor capabilities during legitimate simulation runs without impacting baseline simulation state and fidelity, thus expanding analytical depth for AI-driven training and experimentation.
     \end{highlights}
 \end{onecolentry}
 
 \vspace{0.4cm}
 
 \begin{twocolentry}{05/2020 – 08/2022 (Summers/Winters)}
-    \textbf{Software Engineering Intern}, Torch Technologies -- Huntsville, AL
+    \textbf{Software Engineering Intern, Torch Technologies – Huntsville, AL}
 \end{twocolentry}
 
 \vspace{0.10 cm}
@@ -195,14 +190,14 @@
     \begin{highlights}
         \item Developed Python/C++ data generation/processing pipelines to run, record, and analyze thousands of simulation scenarios, applying machine learning techniques (Gradient Boosting, KNN, DNN) to train predictive classification models for real-time threat assessment and decision-making.
         \item Created a Python-based GUI tool for interactive manipulation of high-resolution elevation and imagery data, automating the segmentation and export of complex terrain tiles into Unreal Engine visualization projects.
-        \item Extended Unreal Engine visualization C++ front-end with additional DIS packet handling, enabling real-time visualization of projectiles, detonations, and scenario events in distributed simulations.
+        \item Extended Unreal Engine visualization C++ front-end with additional DIS packet handling, enabling real-time visualization of projectiles, detonations, and other scenario events in distributed simulations.
     \end{highlights}
 \end{onecolentry}
 
 \vspace{0.4 cm}
 
 \begin{twocolentry}{09/2020 – 05/2022}
-    \textbf{Undergraduate Research Assistant}, Mississippi State University CSE Department
+    \textbf{Undergraduate Research Assistant, Mississippi State University CSE Department}
 \end{twocolentry}
 
 \vspace{0.10 cm}
@@ -214,71 +209,78 @@
     \end{highlights}
 \end{onecolentry}
 
+
 \section{\scshape Skills}
 
 \begin{onecolentry}
-    \begin {itemize}[leftmargin=0.4 cm]
-        \item \textbf{Core Software Architecture \& Design}
+    \begin{highlights}
+        \item Core Software Architecture \& Design
         \begin{itemize}
-            \item Advanced proficiency in C++17/20 with strong OO design principles (Factory, Strategy, Singleton) and extensive UML modeling
-            \item Expertise in modular, layered, microservices, and service-oriented architectures
-            \item Experience applying MVC and related design patterns for clean and maintainable presentation layers
+            \item Object-Oriented Design, Design Patterns (GoF), UML Diagrams
+            \item Modular, Plugin-based, \& Layered Architectures
+            \item Strong understanding of encapsulation, abstraction, and cohesion principles
         \end{itemize}
 
-        \item \textbf{Operating Systems \& Systems Programming}
+        \item Operating Systems \& Systems Programming
         \begin{itemize}
-            \item In-depth understanding of kernel architectures, CPU schedulers, memory managers, and the MMU’s role in virtual memory management
-            \item Strong knowledge of POSIX APIs, IPC mechanisms, and deterministic vs. non-deterministic operating system behaviors
-            \item Skilled in concurrency (multithreading, synchronization primitives), low-level memory management, and event-driven design
+            \item Proficient in low-level systems programming (C, C++), including manual memory management and concurrency control
+            \item Experienced with POSIX APIs for process/thread management and inter-process communication (IPC)
+            \item Expertise in Linux systems programming, debugging, and cross-platform builds
+            \item Build Systems (CMake, Make) and Shell/Python Scripting for automation
+            \item Virtualization \& Containerization (KVM/QEMU, Docker)
+            \item Performance Optimization (Profiling, Cache Utilization, Data Locality)
+            \item Secure Coding Practices (CompTIA Security+), Thread Safety
         \end{itemize}
 
-        \item \textbf{Distributed \& Parallel Computing}
+        \item Distributed \& Parallel Computing
         \begin{itemize}
-            \item Familiarity with messaging and serialization protocols (gRPC, RabbitMQ, Protocol Buffers, FlatBuffers)
-            \item Experience with containerization (Docker) and virtualization (QEMU/KVM)
-            \item Understanding of parallelization frameworks (MPI, OpenMP) and performance optimization techniques
+            \item Microservices Architectures with synchronous (gRPC, custom UDP protocols) and asynchronous (RabbitMQ, pub/sub) messaging
+            \item Network Programming (TCP/UDP sockets) with async for I/O-bound tasks
+            \item Logical-Time Synchronization for distributed systems
+            \item Parallelization Techniques (OpenMP, MPI) and Performance Tuning
         \end{itemize}
 
-        \item \textbf{Machine Learning Integration}
+        \item Machine Learning Integration
         \begin{itemize}
-            \item Practical experience integrating ML/DL frameworks (ONNX, PyTorch, TensorFlow) into simulation pipelines
-            \item Working knowledge of deep learning architectures (GANs, Transformers, LSTMs) and core ML concepts (backpropagation, activation functions)
+            \item Reinforcement Learning Pipelines (Stable baselines, RLlib)
+            \item Deep Learning Frameworks (PyTorch, TensorFlow), ONNX Runtime
         \end{itemize}
 
-        \item \textbf{Collaboration \& Methodology}
+        \item Collaboration \& Methodology
         \begin{itemize}
-            \item Proficient in Git-based workflows, code review processes, and industry-standard coding guidelines (Google Style, C++ Core Guidelines)
-            \item Experience with Agile methodologies (Scrum, Kanban), unit testing (gtest, Catch2), and profiling tools (gdb, Valgrind)
-            \item Committed to continuous improvement through static analysis (clang-tidy) and iterative development practices
+            \item Agile Practices, CI/CD Pipelines, Git Workflows, Coding Standards (C++ Core Guidelines)
+            \item Technical Mentorship, Code Reviews, and Documentation Standards (Doxygen)
+            \item Continuous Learning, Effective Communication, and Cross-Team Collaboration
         \end{itemize}
-    \end{itemize}
+    \end{highlights}
 \end{onecolentry}
+
 
 \section{\scshape Projects}
 
 \vspace{0.2 cm}
 
 \begin{onecolentry}
-    \textbf{Autonomous RC Car (Minesweeper):}
+    \textbf{Autonomous RC Car}
     \begin{highlights}
         \item Solely engineered the entire software stack for a low-cost, disposable autonomous RC car designed to sweep for and detonate landmines.
         \item Architected a robust ROS 2 pub/sub service-oriented navigation system fusing raw IMU/GPS data for precise Ackermann steering control via electronic speed controllers.
         \item Implemented a Python-based command controller integrating base station input and RTK correctional data over a mavros radio, ensuring accurate real-time navigation.
-        \item Developed all supporting base station software and communication interfaces, seamlessly linking user input to the vehicle's control system.
+        \item Developed all supporting base station software and communication interfaces, seamlessly linking user input to the vehicle’s control system.
     \end{highlights}
 \end{onecolentry}
 
 \vspace{0.4 cm}
 
 \begin{onecolentry}
-    \textbf{Tiger Language Compiler:}
+    \textbf{Tiger Language Compiler}
     \begin{highlights}
         \item Designed and implemented a C++ compiler for a functional, ALGOL-like language (Tiger), producing optimized MIPS assembly.
-        \item Introduced a TAC intermediate representation and implemented two register allocation strategies:
-            \begin{itemize}
-                \item Chaitin's Naive Allocation: A simpler, less optimized approach relying on heuristic allocation.
-                \item Briggs Optimization: A comprehensive scheme incorporating control-flow and liveness analysis, as well as instruction cost metrics to minimize load/stores and branches.
-            \end{itemize}
+        \item Incorporated semantic analysis and error checking, optimized three-address code IR, and two register allocation strategies:
+        \begin{itemize}
+            \item Chaitin’s Naive Allocation: A simpler, less optimized approach relying on heuristic allocation.
+            \item Briggs Optimization: A comprehensive scheme incorporating control-flow and liveness analysis, as well as instruction cost metrics to minimize load/stores and branches.
+        \end{itemize}
         \item Achieved best-in-class performance on benchmark tasks, reducing instruction counts by a factor of 10 compared to peer solutions.
     \end{highlights}
 \end{onecolentry}
@@ -286,7 +288,7 @@
 \vspace{0.4 cm}
 
 \begin{onecolentry}
-    \textbf{Before and After Creator:}
+    \textbf{Before and After Creator}
     \begin{highlights}
         \item Built a locally hosted web application leveraging unsupervised ML and deep learning to match before/after car detailing images.
         \item Automated bulk image processing, generating side-by-side collages for a detailing business, improving workflow efficiency and consistency.
@@ -295,4 +297,3 @@
 \end{onecolentry}
 
 \end{document}
-
