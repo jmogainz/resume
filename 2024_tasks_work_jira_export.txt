@@ -1,0 +1,1203 @@
+Back to previous view
+[I2AI-353] Change Terrain to ECEF for StepResults Created: 22/Jan/25  Updated: 24/Jan/25
+Status:	In Progress
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+Data Vis GUI - View Section (I2AI-334)
+ [I2AI-339] Setup pyvista-View callbacks Created: 16/Dec/24  Updated: 24/Jan/25
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Sub-task	Priority:	Medium
+Reporter:	Samuel Holder	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+is blocked by	I2AI-338	View class initialization.	Done
+
+ Description 	 
+Pyvista allows us to create a scroll bar within the figure and tie a callback function to its movement. 
+
+Create a scroll bar.
+Create update_meshes(time), a function that will read through the stored data within the view, select the specific timeframe, and update each mesh accordingly. Mayneed to re-familiarize yourself with the dimensions/shapes of individual data extractions (different extractions have time in different dimensions).
+
+
+
+
+[I2AI-297] Create Common Gdal library Created: 10/Oct/24  Updated: 22/Jan/25
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+Set up a new library. Move all code related to terrain data loading to this library from the RLSIM.
+
+ 
+
+Update RLSim and Terrain Viewshed to point to the Terraingdal library as an external dependency. Adjust the build system in RLSim and Terrain Viewshed to fetch and include the Terraingdal library correctly.
+
+ 
+
+ 
+
+
+
+
+
+[I2AI-277] Trainers - Update Trainers Classes for RAY and Stabe Baseline 3 Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+is blocked by	I2AI-276	Algorithms - Update Algorithm Classes...	Ready for Development
+Epic Link:	RL Python
+
+ Description 	 
+See me before starting. I have local code.
+
+
+
+
+
+[I2AI-276] Algorithms - Update Algorithm Classes for Stable Baseline 3 (PPO and SAC) Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-277	Trainers - Update Trainers Classes fo...	Ready for Development
+is blocked by	I2AI-275	Algorithms - Update Algorithm Classes...	Done
+Epic Link:	RL Python
+
+ Description 	 
+algorithm classes are in "torch_i2_reinforcement_learning/algorithms". 
+
+
+
+
+
+[I2AI-275] Algorithms - Update Algorithm Classes for RAY (PPO and SAC) Created: 25/Sep/24  Updated: 24/Jan/25
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-276	Algorithms - Update Algorithm Classes...	Ready for Development
+is blocked by	I2AI-274	Unit Test - Update unit test for pyda...	Done
+Epic Link:	RL Python
+
+ Description 	 
+    algorithm classes are in "torch_i2_reinforcement_learning/algorithms". 
+
+
+
+
+
+[I2AI-274] Unit Test - Update unit test for pydantic models for Ray and Stable Baseline 3 (PPO and SAC) Created: 25/Sep/24  Updated: 05/Dec/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-275	Algorithms - Update Algorithm Classes...	Done
+is blocked by	I2AI-273	Unit Test - Update unit test director...	Done
+Epic Link:	RL Python
+
+
+
+[I2AI-273] Unit Test - Update unit test directory folder to match src directory folder Created: 25/Sep/24  Updated: 05/Dec/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-274	Unit Test - Update unit test for pyda...	Done
+is blocked by	I2AI-272	Parsers - Update YAML parser factory ...	Done
+Epic Link:	RL Python
+
+
+
+[I2AI-272] Parsers - Update YAML parser factory to handle different yaml files and create correct pydantic models Created: 25/Sep/24  Updated: 05/Dec/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-273	Unit Test - Update unit test director...	Done
+is blocked by	I2AI-271	Data Structures - Update pydantic mod...	Done
+Epic Link:	RL Python
+
+ Description 	 
+yaml parser specific to RL located in "torch_i2_reinforcement_learning/parsers/rl_yaml_parser.py"
+Input should be the one yaml file
+Getters for the various pydantic models 
+
+
+
+
+[I2AI-271] Data Structures - Update pydantic models for Ray and Stable Baseline 3 (PPO and SAC) Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-272	Parsers - Update YAML parser factory ...	Done
+is blocked by	I2AI-270	Config - Update YAML configuration fo...	Done
+Epic Link:	RL Python
+
+ Description 	 
+    pydantic model files located in "torch_i2_reinforcement_learning/data_structures". 
+    update "torch_i2_reinforcement_learning/parsers/rl_algorithm_config_model_factory.py"
+
+
+
+
+
+[I2AI-270] Config - Update YAML configuration for Ray and Stable Baseline 3 (PPO and SAC) Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-271	Data Structures - Update pydantic mod...	Done
+is blocked by	I2AI-269	Update RL Parameters Guide.md guide f...	Done
+Epic Link:	RL Python
+
+ Description 	 
+yaml configuration files located in "torch_i2_reinforcement_learning/configs". 
+
+
+
+
+
+[I2AI-269] Update RL Parameters Guide.md guide for Ray and Stable Baseline 3 Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-270	Config - Update YAML configuration fo...	Done
+is blocked by	I2AI-268	Update UML Diagram for Ray and Stable...	Done
+Epic Link:	RL Python
+
+
+
+[I2AI-268] Update UML Diagram for Ray and Stable Baseline 3 (PPO and SAC) Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-269	Update RL Parameters Guide.md guide f...	Done
+is blocked by	I2AI-267	Update Python packages for RAY (curre...	Done
+Epic Link:	RL Python
+
+ Description 	 
+uml file located in "torch_i2_reinforcement_learning/configs". 
+
+
+
+
+
+[I2AI-267] Update Python packages for RAY (current 2.30.0 / new 2.36.1) and Stable Baseline 3 to latest windows/linux packages. Created: 25/Sep/24  Updated: 26/Nov/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-268	Update UML Diagram for Ray and Stable...	Done
+is blocked by	I2AI-266	Update AFSIM Scenario Creator to util...	Done
+Epic Link:	RL Python
+
+
+
+[I2AI-266] Update AFSIM Scenario Creator to utilize Google Style code comments format. Created: 25/Sep/24  Updated: 24/Jan/25
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-267	Update Python packages for RAY (curre...	Done
+Epic Link:	AFSIM Scenario Creator
+
+
+
+[I2AI-262] ALL BUILD (afsim/rl) script offline build feature Created: 13/Sep/24  Updated: 24/Jan/25
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	CI/CD Pipeline
+
+
+
+[I2AI-254] Bugfix pipeline running: Time out during handle action for PER_FRAME stepping, data extraction is coming up empty. Created: 11/Sep/24  Updated: 19/Sep/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-253] Bugfix for DataRecorder config input file path Created: 11/Sep/24  Updated: 11/Sep/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-247] Get rl/afsim full build and unit test script running on linux. Created: 09/Sep/24  Updated: 13/Sep/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	CI/CD Pipeline
+
+
+
+Change Builders to Constructors for Compile Time Checking (I2AI-241)
+ [I2AI-243] Update Service Allocator Library - Change Builders to Constructors for Compile Time Checking Created: 09/Sep/24  Updated: 22/Jan/25
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Sub-task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+
+
+
+[I2AI-235] Further GDAL windows edge case build fixes Created: 29/Aug/24  Updated: 02/Sep/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-233] Implement consistent code comment formatting Created: 29/Aug/24  Updated: 24/Jan/25
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Matthew Sommers	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	AFSIM Scenario Creator
+
+ Description 	 
+The comments in the AFSIM Scenario Creator are currently a mixture of different formats. Pick one of the commonly used formats and implement it consistently across the tool.
+
+
+
+
+
+[I2AI-224] handle time sync for data recorder in TFC with Environment Created: 21/Aug/24  Updated: 24/Jan/25
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-92	Create data recorder output for RL co...	Ready for Development
+Epic Link:	RL C++
+
+ Description 	 
+See Jacob - Data recording is called on every time advance from TFC. We don't want Environment to record on every frame. This deals with locks in the environment that is needed. 
+
+ 
+
+We need a meeting to discuss this task in more detail before starting development. 
+
+
+
+
+
+[I2AI-175] Library Renaming and Moving Source Code Created: 13/Aug/24  Updated: 06/Sep/24
+Status:	Design
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+Decide on 'grammar' or 'instructions', but not both for library and class names. I think 'grammar' is clearer as it ties with boost grammar. 
+ 
+
+Create "rewardcalculator" library and move 'multicalculators' and 'singlecalculators' out of 'rewards' library.  This should mirror the 'dataextraction' library. Including the "RewardCalculatorFactory", "RewardCalculatorType", "DataRewardContext" in the 'rewardcalculator' library.
+Create 'rewardcalculatorinstructionparser' library that mirrors the 'dataextractioninstructionparser' library. 
+Create 'rewardcalculatortreebasedparser' library that mirrors the 'dataextractioninstructionparser' library.
+Move 'RewardCalculationParser.cpp" from 'grammarbasedrewards' to 'rewardcalculatorinstructionparser' library. 
+Move "RewardInfoNodeParser" from the 'rewards' library to 'rewardcalculatortreebasedparser' library and rename to tree-based.
+Reduce code in 'rewards" library. Not sure what this means yet.
+Rename 'yamlbasedrewards' to 'rewardstreebased'.
+Rename 'grammarbasedrewards' to 'rewardsgrammarbased'. 
+Rename 'grammarbasedobservations' to 'observationsgrammarbased'. 
+Rename 'sensorlaydownactions' to 'actionssensoremplacement'. 
+ 
+
+Ensure interfaces classes have minimal functionality. 
+
+
+
+
+[I2AI-153] AFSIM Plugin Teleporter Bug Created: 01/Aug/24  Updated: 24/Jan/25
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Bug	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+We only do a coordinate system check in instantaneous but not realistic movement. Updated realistic movement. This is in the AFSIM plugin. 
+
+
+
+
+
+[I2AI-148] GDAL Project CMake Changes Created: 24/Jul/24  Updated: 30/Aug/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Attachments:	PNG File image-2024-08-26-12-54-12-439.png    
+Epic Link:	RL C++
+
+ Description 	 
+Installation location on windows vs linux 
+ 
+
+Database file - determine if the database file can be relative. If so, we can move it into the install folder. 
+ 
+
+Running in Visual Studio with no default set build configuration - This causes issues on Windows when building from RL Simulator as a stand-alone project. It can't be built in release or debug currently unless built from the Python side. 
+ 
+
+
+
+
+
+
+
+[I2AI-147] Linux Admin Exam Preparation Created: 24/Jul/24  Updated: 06/Sep/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-141] AFSIM Logical Time Frametime - What should it be and why do some number make it run slow? Created: 10/Jul/24  Updated: 02/Oct/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Attachments:	PNG File image-2024-10-02-10-10-19-730.png     PNG File image-2024-10-02-10-14-43-852.png     PNG File image-2024-10-02-10-15-22-602.png     PNG File image-2024-10-02-10-16-04-249.png    
+Epic Link:	RL C++
+
+ Description 	 
+Afsim research task with what frame times are okay for us to use, and why other frame times are not okay to use because they have a significant spike in total runtime.
+
+It was determined that it was not worth the effort to find the answer to this odd behavior in AFSIM. Attached to this issue are the graphs for both Windows and Linux operating systems that show the frame times that are okay to use and the frame times that are not okay to use for an ai scenario run.
+
+
+
+
+
+[I2AI-133] Reduce code duplication involved in yaml parsing Created: 02/Jul/24  Updated: 10/Jul/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Low
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-132] Implement Data Recorder library Created: 02/Jul/24  Updated: 01/Aug/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	High
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-130] Gdal build in debug fix Created: 28/Jun/24  Updated: 28/Jun/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-127] Catch exceptions thrown from C++ like the runtime_error and handle shutdown in Python Created: 17/Jun/24  Updated: 24/Jan/25
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL Python
+
+
+
+[I2AI-124] Fix GDAL build Created: 12/Jun/24  Updated: 17/Jun/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-123] Proper Python Crash Handling for Crashes Python Created: 10/Jun/24  Updated: 02/Oct/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Story	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+Determined to be resolved. Windows is the issue. The implementation does not print out an error when it occurs in a separate thread from the main thread. The GNU implementation of the c++ runtime will print out the error message that was thrown in the default std::terminate handler. Windows does not set a default std::terminate handler. So we need to log when you throw an error no matter what. Create custom exception and/or std::terminate callback to make this more robust.
+
+
+
+
+
+[I2AI-120] Improve gdal build reliability / remove PROJ Fork dependency Created: 10/Jun/24  Updated: 10/Jun/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+BREAKING: Issues with gdal finding wrong versioned/type libraries on system and then trying to compile and link with them (system include and lib)
+BREAKING: Issues with libtiff finding and compiling with Codec packages on system that PROJ does not know to link when linking libtiff.
+IMPROVE: PROJ fork may not be necessary
+
+
+ Comments 	 
+Comment by Jacob Moore [ 10/Jun/24 ]
+Completed by Jacob and Jeremy
+
+
+
+
+[I2AI-103] Track Service Menu Not working for vehicle selection Created: 05/Jun/24  Updated: 22/Jan/25
+Status:	Ready for Development
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Bug	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-99] Move ExtractionInstructionParser into its own library Created: 04/Jun/24  Updated: 17/Jun/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Jacob Moore	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+Remove ExtractionInstructionParser header/souce and tests from dataextraction library.
+Move into its own library named dataextractioninstructionparser
+Document usage of the parser, writing correct instructions, etc.
+
+
+
+
+C++ Data Recording for Multi-Environment Runs (I2AI-71)
+ [I2AI-91] Define a data analyst recorder lib Created: 28/May/24  Updated: 02/Jul/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Sub-task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-92	Create data recorder output for RL co...	Ready for Development
+blocks	I2AI-93	Create data recorder output for toolb...	Done
+blocks	I2AI-94	Create data recorder output for toolb...	Done
+blocks	I2AI-95	Create data recorder output for toolb...	Done
+blocks	I2AI-96	Create data recorder output for toolb...	Done
+blocks	I2AI-97	Create data recorder output for toolb...	Done
+
+ Description 	 
+File Based (works at 5400 with no issues)
+
+csv
+json
+yaml
+flatbuffers (binary or json) 
+ 
+
+Where does this library get utilized? The environment? The observers?
+
+Do we want an overall summary? (example: how many tracks were detected the overall scenario run, how many assets were lost, how many missiles were fired)
+
+How is the data organized, especially since we hold the current scenario up in batch controller from going to the next scenario?
+
+
+
+
+
+[I2AI-85] Add C++ barrier options for step config to yaml config Created: 28/May/24  Updated: 13/Sep/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+is blocked by	I2AI-45	Refactor Temporal Flux Capacitor to b...	Done
+Epic Link:	RL C++
+
+
+
+[I2AI-81] Add History to Sensor Limits by Convert SensorLimitsDataRepository to be managed with Vehicle History Repo & Manager Created: 15/May/24  Updated: 31/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	High
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+develop/src/libs/repositories/include/repositories/VehicleHistoryWithStaleDataRepository.h
+
+develop/src/libs/repositories/include/repositories/VehicleHistoryWithStaleDataRepositoryManager.h
+
+ 
+
+This does not create the grammar or extractors for sensor limits. This is done in AIML-84.
+
+ 
+
+
+
+
+
+[I2AI-79] Clairvoyant Track Service Command Line Test Driver Menu Created: 15/May/24  Updated: 23/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	High
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-78] Truth Data External of Track Data Created: 09/May/24  Updated: 10/Jun/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Issue Links:	
+Blocks
+blocks	I2AI-80	Add DIS Truth as a means to calculate...	Done
+Epic Link:	RL C++
+
+ Description 	 
+Ability to utilize platform DIS data for reward calculation even if the sensor did not detect anything. 
+
+This is to make some type of data storage or processing to detect DIS data. This is not to create the extractors or grammar for usage in rewards. This will be done in AIML-80. 
+
+
+
+
+
+[I2AI-72] Forward Declaration Code Cleanup Created: 22/Apr/24  Updated: 23/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-68] Add cmake Ninja support - either pip or source code Created: 22/Apr/24  Updated: 10/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL Python
+
+ Description 	 
+GitHub - ninja-build/ninja: a small build system with a focus on speed
+
+Pip installed
+
+
+
+
+
+[I2AI-64] Windows Flatbuffer Random Crash Created: 19/Apr/24  Updated: 24/Jul/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Bug	Priority:	Highest
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-56] Use Local Environment with no Network Created: 19/Apr/24  Updated: 06/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL Python
+
+ Description 	 
+REDSTONE: Given packages installed in the base environment, have the poetry just use the base python environment to populate the local venv without connection to internet.
+
+
+
+
+
+[I2AI-55] PIP Upgrade Optional Created: 19/Apr/24  Updated: 06/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL Python
+
+ Description 	 
+REDSTONE: Make PIP Upgrade Optional depending upon network connection - no network - no pip upgrade
+
+
+
+
+
+[I2AI-48] Reduce Compile Warnings of Third-Party Libraries Created: 19/Apr/24  Updated: 13/May/24
+Status:	Done
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Highest
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+
+
+[I2AI-44] Updated C++ Templates Created: 19/Apr/24  Updated: 09/Sep/24
+Status:	Design
+Project:	I2 Artificial Intelligence
+Component/s:	None
+Affects Version/s:	None
+Fix Version/s:	None
+
+Type:	Task	Priority:	Medium
+Reporter:	Daniel Davis	Assignee:	Jacob Moore
+Resolution:	Unresolved	 
+Labels:	None
+Remaining Estimate:	Not Specified
+Time Spent:	Not Specified
+Original Estimate:	Not Specified
+
+Epic Link:	RL C++
+
+ Description 	 
+Updated C++ Templates across the RL codebase to be consistent with (*.h, *.ipp, and *.cpp). Will schedule a team meeting to discuss. 
+
+ 
+
+Classes with Templates: 
+
+Recursive Variant 
+
+
+
+
+Generated at Fri Jan 24 15:21:21 CST 2025 by Jacob Moore using Jira 9.12.10#9120010-sha1:3b20ee34958dbedd3d6f3418ef74b9ccb7acf6ef.

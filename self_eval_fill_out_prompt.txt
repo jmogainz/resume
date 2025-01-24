@@ -1,0 +1,224 @@
+Can you fill out my below self eval form?
+
+Date:   
+
+i2 Employee Self-Evaluation Form 
+
+Please complete this form to reflect on your performance, contributions, and areas for growth. Be honest and detailed in your responses. 
+
+Basic Information 
+
+Employee Name:  
+
+Manager’s Name: 
+
+Job Responsibilities 
+
+List Your Key Job Responsibilities: (Outline the primary duties and tasks of your role.) 
+
+Responsibility 1: 
+
+Responsibility 2: 
+
+Responsibility 3: 
+
+ 
+
+How well do you think you’ve performed your responsibilities during this period? 
+(Rate yourself on a scale of 1–5, where 1 = Needs Improvement and 5 = Excellent. Provide examples to support your rating.) 
+
+Rating: 
+
+Examples: 
+
+Achievements 
+
+What were your most significant accomplishments during this period? (Highlight specific projects, goals, or milestones you achieved.) 
+
+Accomplishment 1: 
+
+Accomplishment 2: 
+
+Accomplishment 3: 
+
+ 
+
+How did these accomplishments impact the team, department, or company? 
+
+Strengths 
+
+What do you consider your key strengths in your role? (Think about skills, qualities, and behaviors that help you succeed.) 
+
+ 
+
+How have your strengths benefited your work (and team)? 
+
+Areas for Improvement 
+
+What are the areas where you feel you could improve? 
+
+ 
+
+What steps or resources would help you improve in these areas? 
+
+Goals 
+
+What goals did you set during the last evaluation period, and how successful were you in achieving them? (Please provide specific examples.) 
+
+ 
+
+What are your goals for the next evaluation period? 
+
+Goal 1: 
+
+Goal 2: 
+
+Goal 3: 
+
+ 
+
+What support do you need from your manager or organization to achieve these goals? 
+
+Feedback 
+
+What feedback do you have for your manager or the organization? (This can include thoughts on processes, tools, or workplace culture.) 
+
+ 
+
+Are there any additional skills or training you’d like to develop? 
+
+ 
+
+Is there anything else you’d like to share regarding your performance? 
+
+ 
+ 
+
+ Write the entire document out (docx). Here is my previous one from the last year so you use the same writing style and role information (as that stuff has not changed). The only thing that should be new is the legit tasks that I completed this year. Which I am about to give you as well.
+
+Here is last years self eval doc:
+
+Here is my self eval document that I completed this spring:
+
+Name: Jacob Moore						Date: 1/24/24 
+
+Discuss your job (critical functions, general objectives, your customers) 
+
+Employee Feedback:  
+
+ 
+
+In my role as a software developer within the AI/ML team, I focus on architecting, designing, and implementing C++ applications and libraries to aid a variety of AI-related tasks. A key part of my job involves our Reinforcement Learning (RL) project, where I'm tasked with developing features and libraries that are incorporated into our C++/Python pipeline. This necessitates a thorough understanding of the codebase as well as the technical objectives of the pipeline.  
+
+I am skilled in C++ memory management, multithreading, and time complexity, which are crucial for optimizing our RL learning pipeline in parallel environments. My expertise extends to detailed system design, where I utilize behavioral and creational patterns to construct scalable and robust systems. A major emphasis of my work is on the usability and maintainability of system, relying heavily on a deep understanding of modular and layered architecture principles. This approach requires the development of clear interfaces and effective separation of concerns, making updates and scaling more seamless. Additionally, I'm responsible for creating comprehensive documentation and diagrams for our developed libraries, ensuring clarity and long-term maintainability of the system. 
+
+Beyond my technical skills, having a deep knowledge of our systems allows me to suggest different approaches and improvements, many of which have been accepted and integrated into our design. Furthermore, I bring intermediate experience in machine learning and deep learning to the table. This allows me to offer ideas and solutions that enhance or address data science-related challenges in our projects. I also have intermediate knowledge of Linux operating systems, contributing to the setup and the debugging of our deployment environments. 
+
+My customer in this context is Daniel Tidwell, to whom our team delivers tailored solutions and support, aligning with our project objectives. 
+
+ 
+
+Discuss your significant accomplishments during the past quarter. 
+
+Employee Feedback:  
+
+ 
+
+Over the past quarter, my significant contributions and accomplishments include but are not limited to: 
+
+Key Projects and Initiatives: 
+
+Development of a C++ Onnx Model inferencing library which involved a composition data model architecture that imitates the functionality of the python Pytorch Forecasting library’s time series dataset class. 
+
+Development of the ServiceAllocator library with remote (docker containers) and local (localhost) allocation modes (responsible for procedurally starting up instance groups of toolbox services) 
+
+Implementation of RL Gym Spaces in C++ as a library, complete with tests, which uses an interface/implementation architecture 
+
+Development of an RL Observations library and associated tests which uses a hierarchical interface/implementation architecture 
+
+Enabling Python RLlib and Stable Baselines algorithms to be exported in Onnx format through extensive trials and debugging 
+
+Developed Pybind11 code that allows our C++ libraries to be used seamlessly in a python RL environment 
+
+Supported the building, debugging, and running of our project on Linux 
+
+Contributed to the growth of my teammates in C++ and software design principles through indirect code examples and direct advice and support 
+
+Deepening Software Architecture Knowledge: 
+
+I have significantly enhanced my understanding of high-level software architecture styles and low-level design patterns. This knowledge has been instrumental in writing modular object-oriented (OO) libraries that epitomize exemplary software development principles. 
+
+The libraries I have developed model critical software attributes like readability, maintainability, scalability, completeness, efficiency, and robustness. They also embody fundamental software development concepts such as encapsulation, abstraction, and cohesion. 
+
+Overall Contribution: 
+
+My contributions this quarter have not only advanced our team's technical capabilities but has directly impacted the efficiency and effectiveness of our RL learning pipeline and has been pivotal in driving the project towards its strategic objectives. 
+
+ 
+
+What role do you see yourself in, both as a part of your working team, and in the Torch organization as a whole? 
+
+Employee Feedback:  
+
+I see myself as a valuable and high-performing contributor to our projects, and I play a small mentoring role within my team, providing guidance and support to colleagues less versed in the intricacies of core software development techniques and principles, build systems, and AI/ML methodologies. This role helps elevate the team's overall skill set and ensures a smoother workflow in our complex project environment. I also embrace a learner's role within the team, eagerly accepting advice and ideas from those more experienced than me, understanding the importance of continual growth and learning from senior team members.  
+
+ 
+
+In the broader context of the organization, I am committed to continuously refining my skills and deepening my knowledge in my field. I believe my strong work ethic and consistent pursuit of improvement, coupled with a desire to use modern software technologies, serve as a positive encouragement to those around me. This approach sets a solid example for others to see of what it means to work at Torch, emphasizing the values of innovation and high-quality work. 
+
+Which of your job elements do you perform best? Which elements do you enjoy more? 
+
+Employee Feedback:  
+
+I am confident in my ability to write high-quality code with a quick turnaround. Given sufficient time, I believe I can develop a solution for almost any request, making problem-solving one of my strongest job elements. I am also a good learner and respect those more senior than me who impart knowledge and wisdom in order to make me a better developer daily. The aspects of my job that bring me the most enjoyment are designing and writing code, along with creating UML diagrams. Furthermore, I take pleasure in teaching others about areas in which I am knowledgeable and consider myself to be adept at it. 
+
+Which of your job elements do you think you need to improve on? Which elements do you like least? 
+
+Employee Feedback:  
+
+I recognize that there is room for improvement in my knowledge of the latest methodologies in machine learning, deep learning, and reinforcement learning. Additionally, my limited knowledge in the defense sector presents another area where I need to enhance my understanding, but I believe this just comes with time. By deepening my expertise in these domains, particularly with a focus on defense applications, I would be better equipped to contribute effectively to the development and refinement of RL model training techniques and tasks. Although I find the statistical elements of AI development intriguing, my inclination towards software design often dominates my task prioritization. I believe that by marginally increasing the emphasis on research, I could make more substantial contributions during brainstorming sessions and in the generation of project ideas, complementing the expertise I will accumulate through having more years of experience. 
+
+Discuss what you can do to improve your performance or enlarge your job. 
+
+Employee Feedback:  
+
+To enhance my performance, I plan to continue on my current trajectory, as I've observed a consistent increase in my efficiency and speed. This encompasses everything from debugging, object-oriented design, and build system setup, to script writing. Further refining my skills with Linux shell commands and reducing reliance on my mouse have already yielded significant efficiency boosts. Continuing in this direction will undoubtedly enlarge my job scope and capabilities. A key driving factor in the improvement that I have seen is my consistent research and exploration into ideas and concepts that are new to me.  
+
+What can your supervisor do to help you to improve your performance or enlarge your job? 
+
+Employee Feedback:  
+
+My supervisor already excels at providing the support and resources I need to work at my highest efficiency. Continuation of this supportive environment is all that's needed for me to continue growing and contributing at an optimal level. 
+
+What are your goals/objectives for the next 12 months? 
+
+Employee Feedback:  
+
+Over the next twelve months, my objectives are to reach a more advanced level in C++ development including architecture and design, become a more proficient RL researcher, and contribute more significantly to theoretical AI discussions. I aim to deepen my understanding of RL policies and algorithms and maintain a comprehensive knowledge of our entire codebase. I also aim to deepen my expertise in training large deep learning (DL) and reinforcement learning (RL) models, with a specific focus on parallelization in their physical deployment environments. This advanced knowledge will be instrumental in continuously enhancing our AI projects. By thoroughly understanding and effectively utilizing parallel computing techniques, I aspire to optimize the use of our available hardware resources, ensuring that we maximize efficiency and performance in our computational tasks. 
+
+What are your long-range career goals/objectives? 
+
+Employee Feedback:  
+
+Long-term, I aspire to become a leading figure in software development and machine learning engineering. I'm committed to continuously expanding my knowledge and refining my skills, a journey marked by my pursuit of a MS in Computer Science. My goal, as impossible as it is, is to be an expert in the entire spectrum of software engineering. I envision myself as a leader who not only excels technically but also inspires and elevates those around him. I am actively working towards a technical leadership role one day, aspiring to achieve it at increasingly higher levels within the organization. My leadership approach I desire to have is one of service, supporting and nurturing those underneath me for collective and individual success, which I believe is key to building a strong, effective team and, by extension, contributing significantly to the broader goals of Torch. 
+
+
+And now the tasks I did this year specifically:
+
+Data Recorder singleton library that integrates into either logical time or real time distributed systems, and custom binary serialized data using flatbuffer objects for later easy deserialization and analysis, recording data on time intervals or events.
+
+I have also setup some of our largest cmake components for our projects, integrating many third party builds into our project as part of our build process, stream lining the build process for our team, and working to improve developer ergonomics in building and debugging our projects. I am extremely experienced in windows and linux dynamic/static library and executable compilation and making sure large projects work across multiple platforms with minimal code differences. Specifically I helped setup the integration of gdal into our cmake build system. 
+
+I wrote a plugin for AFSIM that places what I call shadow sensors into the simulation, and it basically manually constructs secrete sensors that are not known by the main simulation driving code that act as exact replicas as the sensors currently in the simulation. These sensors also shadow all changes and movements that the actual sensors make as well. What this allows us to do is modify some effects of the shadow sensors without having to modify the real sensors or plus extra real sensors in the scenario which would affect the accuracy of the simulation, so we can have unique sensor data reported along side the 'truth' sensor data, that is able to see through mountains or have infinite range. This has obvious benefits in reinforcement learning training when calculating rewards based on sensor placement. AFSIM is an extremely large OO system as well, so it requires a lot of knowledge of OO design patterns and principles to work with it and especially to be able to extend it. (This is called the clarivoyant sensor observer).
+
+I built an offline system that creates our project python virtual environment from the current state of your system python library, creating local wheelhouse on an http server, in order for our poetry system (without any changes) to collect all of our necessary packages the same way as usual, just from a local remote instead of pypi. 
+
+I tracked down bugs throughout our complex logical time clocked distributed system to maintain function order of rl pipeline as well as business unit wide toolbox that our pipeline relies on. Largely maintinaing and updgrading previously previously written project code.
+
+    I did all the logical time synchronization between our reinforcement learning python pipeline and our c++/pybinded services that connect to our 'environment', AFSIM simulation. So that entails rllib and sb3 training/stepping keeping in synchronization as a logically clocked service in the microservices 'envirionment' architecture. You could almost look at the simulation as the 'model' in this case, the view would be any live logging/dashboards we had for logging training metrics during training/tuning, and the controller is our entire environment service layer that involves retrieving information from the sim and storing in custom observations, calculating rewards, and executing actions by injecting them into the sim, which utilizes more AFSIM plugins that handle specific actions (live fire, move, etc.).
+
+I studied and got security+ comptia certification to be linux admin.
+
+Built out python rl training system fully configurable for rllib or stable baselines 3 training, supporting PPO and other policies shared between them, it launches our c++ environment and configures it along with all policies strongly typed and logically decomposed into functionaly similar groups like how rllib does the configuration of resources, workers, training, etc.
+
+Worked together with teammate to architect and design a python frontend interface specification and specific frontends to implement it.
