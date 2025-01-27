@@ -221,4 +221,4 @@ I studied and got security+ comptia certification to be linux admin.
 
 Built out python rl training system fully configurable for rllib or stable baselines 3 training, supporting PPO and other policies shared between them, it launches our c++ environment and configures it along with all policies strongly typed and logically decomposed into functionaly similar groups like how rllib does the configuration of resources, workers, training, etc.
 
-Worked together with teammate to architect and design a python frontend interface specification and specific frontends to implement it.
+Worked together with teammate to architect and design a python frontend interface specification and specific frontends to implement it, this was views component in a MVP design.

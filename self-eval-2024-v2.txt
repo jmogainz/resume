@@ -1,0 +1,183 @@
+**i2 Employee Self-Evaluation Form**  
+*Date: 1/24/25*  
+
+---
+
+### **Basic Information**
+
+- **Employee Name:** Jacob Moore  
+- **Manager’s Name:** Daniel Tidwell  
+
+---
+
+### **Job Responsibilities**  
+*(Outline the primary duties and tasks of your role.)*  
+
+**Responsibility 1:**  
+Architect, design, and implement C++ applications and libraries to support AI-related tasks, with a focus on Reinforcement Learning (RL) integration into a C++/Python pipeline. This involves deep knowledge of C++ memory management, concurrency, system design, and software architecture best practices.
+
+**Responsibility 2:**  
+Develop and maintain features for our RL project that require a thorough understanding of the codebase, project objectives, and integration points with Python-based frameworks (e.g., RLlib, Stable Baselines). Contribute to design, documentation, and code reviews, ensuring maintainable and scalable systems.
+
+**Responsibility 3:**  
+Leverage intermediate machine learning and deep learning expertise, particularly in reinforcement learning strategies. Collaborate with teammates to guide ML/DL experiments, address data science challenges, and facilitate integration within large, distributed simulation environments.  
+
+---
+
+### **How well do you think you’ve performed your responsibilities during this period?**  
+*(Rate yourself on a scale of 1–5, where 1 = Needs Improvement and 5 = Excellent. Provide examples to support your rating.)*  
+
+**Rating:**
+
+**Examples:**  
+- Successfully developed a *Data Recorder* singleton library that seamlessly integrates with logical or real-time distributed systems, enabling comprehensive data capture, analysis, and MLOps integration.  
+- Set up and improved large-scale CMake components, streamlining our multi-platform build processes for both Windows and Linux.  
+- Created an *AFSIM plugin* (the “clairvoyant sensor observer”) that extends and shadows existing sensors for specialized RL training scenarios, demonstrating thorough understanding of large OO systems.  
+- Built an offline system for creating Python virtual environments from a local wheelhouse, allowing project setup in classified rooms without internet access.  
+- Coordinated logical time synchronization across microservices in our RL pipeline, ensuring consistent step ordering between Python training loops and C++ environment services.  
+- Earned the Security+ certification, further solidifying foundational systems administration and security skills.  
+- Architected a fully configurable Python RL training system bridging RLlib and Stable Baselines 3, with robust resource configuration, policy management, and environment orchestration.  
+
+Through these examples, I believe I have not only met but exceeded expectations for my responsibilities, consistently contributing high-quality, maintainable, and scalable solutions.
+
+---
+
+### **Achievements**  
+*(Highlight specific projects, goals, or milestones you achieved.)*  
+
+**Accomplishment 1:**  
+**Data Recorder Singleton Library**  
+- Created a flexible, event-based data recording system that integrates with logical time or real-time distributed systems.  
+- Implemented custom binary serialization using FlatBuffers, enabling efficient data retrieval and analysis.  
+- Provided the ability for our team to visualize data for manual human testing and to record “gold” system output for streamlined end-to-end function tests.  
+- Can record from nearly every critical system component, aiding thorough system monitoring and troubleshooting.  
+- Allows for deeper analysis of captured data in MLOps workflows, supporting continuous AI improvement and tuning.
+
+**Accomplishment 2:**  
+**Large-Scale CMake & Cross-Platform Build Integration**  
+- Set up and maintained some of the largest CMake components in our projects, integrating multiple third-party libraries (e.g., GDAL).  
+- Streamlined developer ergonomics, ensuring minimal code differences for Windows vs. Linux builds, significantly reducing onboarding friction and build times.
+
+**Accomplishment 3:**  
+**AFSIM “Clairvoyant Sensor Observer” Plugin**  
+- Extended AFSIM to incorporate “shadow sensors,” which replicate existing sensors without interfering with the simulation’s core logic.  
+- Enabled specialized sensor data collection (e.g., infinite range, see-through-mountain capabilities) for advanced reinforcement learning reward calculation.
+
+**Accomplishment 4:**  
+**Offline Python Virtual Environment System**  
+- Built an offline environment creation flow using local wheelhouses on an HTTP server, preserving the standard Poetry configuration.  
+- Critically, this approach allows us to set up our pipeline in classified rooms without internet access—where we primarily deploy—ensuring a consistent, reproducible Python environment.
+
+**Accomplishment 5:**  
+**Logical Time Synchronization & Microservices Bug Tracking**  
+- Orchestrated synchronization between Python RL frameworks (RLlib, Stable Baselines 3) and C++ environment services to maintain correct stepping order.  
+- Tracked and resolved multiple bugs in complex distributed architectures, improving reliability and maintainability of the reinforcement learning pipeline.
+
+---
+
+### **How did these accomplishments impact the team, department, or company?**  
+
+- **Enhanced Efficiency:** Streamlined build processes and improved developer workflows, reducing setup times for new hires and minimizing ongoing maintenance overhead.  
+- **Increased Capabilities for RL:** The AFSIM “clairvoyant” sensor plugin and time synchronization features significantly improved RL experimentation by providing specialized sensor data and predictable training cycles.  
+- **Strengthened Collaboration:** The offline Python environment approach and integrated logging solutions facilitated smoother teamwork across distributed environments.  
+- **Deployment in Restricted Environments:** By enabling a reliable, internet-free setup, the offline environment system supports our key operational requirement of deploying in classified rooms, preserving all necessary packages without external dependencies.  
+- **Improved Reliability & Observability:** With the Data Recorder capturing essential system outputs and facilitating thorough analysis, we can more effectively validate end-to-end functionality, diagnose issues, and refine models, improving confidence in our AI/ML pipelines.
+
+---
+
+### **Strengths**  
+*(What do you consider your key strengths in your role?)*  
+
+- **High-Quality, Rapid Code Development:** I excel at writing clean, maintainable code with a quick turnaround, leveraging design patterns and best practices.  
+- **System Design & Architecture:** My understanding of layered architectures, modular design, and OO principles helps me build scalable, robust systems.  
+- **Collaboration & Mentoring:** I actively share knowledge and guide teammates on both software design principles and AI/ML methodologies, fostering growth.  
+- **Continuous Learning:** I continuously seek to deepen my expertise, especially in RL, ML, software design, and build systems.  
+
+---
+
+### **How have your strengths benefited your work (and team)?**  
+
+- My fast yet robust development approach ensures tasks move forward without sacrificing quality.  
+- By contributing to architecture discussions and code reviews, I promote maintainability and longevity in our codebase.  
+- Mentoring and knowledge-sharing across the team helps elevate our collective proficiency, ultimately delivering a stronger product to customers.  
+
+---
+
+### **Areas for Improvement**  
+*(Where do you feel you could improve?)*  
+
+- **Advanced ML/RL Research:** While I have intermediate knowledge of ML/RL, I want to deepen my understanding of cutting-edge RL algorithms, especially in the context of large-scale training.  
+- **Defense Sector Expertise:** I still see room to learn more about the specific defense applications we target, though much of this comes with continued exposure and time.  
+- **Statistical Methods in AI:** I focus heavily on software design, but I would benefit from dedicating more time to the statistical underpinnings of AI and contributing to idea-generation sessions.  
+
+---
+
+### **What steps or resources would help you improve in these areas?**  
+
+- Participating in advanced AI/ML workshops or internal training sessions.  
+- Engaging in more in-depth research and reading on state-of-the-art RL methods, especially those relevant to defense scenarios.  
+- Taking part in cross-functional projects that expose me to new datasets, domain knowledge, and design challenges.  
+
+---
+
+### **Goals**  
+
+#### **What goals did you set during the last evaluation period, and how successful were you in achieving them?**  
+- **Goal 1: Further Mastery of C++ Architecture and Design**  
+  - **Progress:** Built multiple complex C++ libraries and integrated them with Python pipelines. Extended knowledge of cross-platform builds and advanced OO patterns through large-scale AFSIM plugin development.  
+
+- **Goal 2: Become a More Proficient RL Researcher**  
+  - **Progress:** Deepened understanding of RLlib, Stable Baselines 3, and synchronization strategies between simulation environments and training loops, though still striving to reach a more advanced research level.  
+
+- **Goal 3: Contribute More Significantly to AI Discussions**  
+  - **Progress:** Provided meaningful input during architectural and design reviews, specifically for RL environment design. Plan to further enhance my theoretical contributions in the near future.
+
+---
+
+#### **What are your goals for the next evaluation period?**  
+
+**Goal 1:**  
+**Expand Cutting-Edge RL Knowledge**  
+- Deepen expertise in emerging RL algorithms, especially those leveraging hierarchical or multi-agent architectures.  
+
+**Goal 2:**  
+**Integrate Advanced Simulation Features**  
+- Continue improving AFSIM plugins and microservice architectures to enable more complex scenario modeling and advanced RL training workflows.  
+
+**Goal 3:**  
+**Enhance Leadership & Mentoring**  
+- Play a more proactive role in mentoring junior developers, conducting formal knowledge-sharing sessions, and possibly leading small project initiatives.
+
+---
+
+### **What support do you need from your manager or organization to achieve these goals?**  
+
+- Continued access to relevant training materials, conferences, or certifications related to advanced RL techniques.  
+- Consistent feedback and opportunities to lead smaller initiatives, which would further my growth in leadership and technical mentoring.  
+- Ongoing collaboration with domain experts in the defense sector to improve my practical domain knowledge.  
+
+---
+
+### **Feedback**  
+*(What feedback do you have for your manager or the organization?)*  
+
+- The supportive environment provided by my manager has significantly contributed to my efficiency and growth. I encourage continuing this open-door policy for feedback and resource requests.  
+- As we expand, ensuring that we maintain robust development infrastructure and consistent build processes is critical to sustaining high-quality outputs.  
+
+---
+
+### **Are there any additional skills or training you’d like to develop?**  
+
+- Deepening my ML and RL theoretical foundation, potentially through advanced courses or sponsored certifications.  
+- Gaining more hands-on experience with large-scale system deployment and orchestration, including containerization and cloud-based solutions.  
+
+---
+
+### **Is there anything else you’d like to share regarding your performance?**  
+
+- I am proud of how quickly I can adapt to new frameworks and system architectures. This adaptability has been crucial for our evolving AI/ML needs.  
+- I appreciate the trust and latitude given to explore complex solutions—this has enabled me to contribute meaningfully to our long-term technical vision.
+
+---
+
+**End of Document**
